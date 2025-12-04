@@ -404,7 +404,7 @@ body {
 }
 /* CONTENT WRAPPER — keeps everything narrow and centered */
 .content-wrapper {
-  max-width: 950px;         /* adjust this number to change narrowness */
+  max-width: 1150px;         /* adjust this number to change narrowness */
   margin: 0 auto;           /* centers the content */
   width: 100%;
   padding: 0 20px;          /* adds left/right breathing room */
