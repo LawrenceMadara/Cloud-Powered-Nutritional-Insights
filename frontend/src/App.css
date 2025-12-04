@@ -402,44 +402,16 @@ body {
     justify-content: flex-start;
   }
 }
-/* Force the entire React app to be centered and narrow */
-#root {
-  display: flex;
-  justify-content: center;
-  background-color: #f3f4f7;
+/* CONTENT WRAPPER — keeps everything narrow and centered */
+.content-wrapper {
+  max-width: 950px;         /* adjust this number to change narrowness */
+  margin: 0 auto;           /* centers the content */
+  width: 100%;
+  padding: 0 20px;          /* adds left/right breathing room */
 }
 
-/* Main wrapper (your App) */
-.App {
+/* Make all sections respect the wrapper */
+.content-wrapper > section {
   width: 100%;
-  max-width: 1100px; /* ← ADJUST THIS to control how narrow you want */
-  margin: 0 auto;
-  background-color: #f3f4f7;
-}
-
-/* Make the main content also respect the max width */
-.main-content {
-  max-width: 1100px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Make all sections match the centered layout */
-.explore-section,
-.filters-section,
-.api-section,
-.pagination-section {
-  max-width: 1100px;
-  width: 100%;
-  margin: 20px auto;
-}
-
-/* Center the header and footer too */
-.app-header,
-.app-footer {
-  max-width: 1100px;
-  width: 100%;
-  margin: 0 auto;
 }
 
