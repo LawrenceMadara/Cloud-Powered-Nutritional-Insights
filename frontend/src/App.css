@@ -401,36 +401,45 @@ body {
   .pagination {
     justify-content: flex-start;
   }
-  /* Limit overall width */
-.main-content {
-  max-width: 1200px;       /* adjust to 900px or 1000px if you want smaller */
-  margin: 0 auto;          /* centers the content */
-  padding: 20px 20px 60px; /* left/right breathing room */
 }
-
-/* Also limit the footer + header to match */
-.app-header,
-.app-footer {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Center the entire app on large screens */
-.App {
+/* Force the entire React app to be centered and narrow */
+#root {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   background-color: #f3f4f7;
 }
 
-/* Ensure each section is limited in width too */
+/* Main wrapper (your App) */
+.App {
+  width: 100%;
+  max-width: 1100px; /* ← ADJUST THIS to control how narrow you want */
+  margin: 0 auto;
+  background-color: #f3f4f7;
+}
+
+/* Make the main content also respect the max width */
+.main-content {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Make all sections match the centered layout */
 .explore-section,
 .filters-section,
 .api-section,
 .pagination-section {
-  max-width: 1200px;
+  max-width: 1100px;
   width: 100%;
-  margin: 0 auto 30px;
+  margin: 20px auto;
 }
 
+/* Center the header and footer too */
+.app-header,
+.app-footer {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
 }
+
