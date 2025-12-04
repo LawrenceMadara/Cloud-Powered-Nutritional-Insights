@@ -401,4 +401,36 @@ body {
   .pagination {
     justify-content: flex-start;
   }
+  /* Limit overall width */
+.main-content {
+  max-width: 1200px;       /* adjust to 900px or 1000px if you want smaller */
+  margin: 0 auto;          /* centers the content */
+  padding: 20px 20px 60px; /* left/right breathing room */
+}
+
+/* Also limit the footer + header to match */
+.app-header,
+.app-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Center the entire app on large screens */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f4f7;
+}
+
+/* Ensure each section is limited in width too */
+.explore-section,
+.filters-section,
+.api-section,
+.pagination-section {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto 30px;
+}
+
 }
